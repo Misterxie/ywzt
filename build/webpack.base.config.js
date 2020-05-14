@@ -40,6 +40,13 @@ module.exports = {
             },
             {
                 test: /\.js$/,
+                loader:'babel-loader',
+                options:{
+                plugins:['syntax-dynamic-import']
+                },
+            },
+            {
+                test: /\.js$/,
                 loader: 'happypack/loader?id=happybabel',
                 exclude: /node_modules/
             },
