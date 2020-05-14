@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+  PUBLIC "-//mybatis.org//DTD Ctsi MyBatis Generator Configuration 1.0//EN"
+  "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+  
+
+  <context id="storage_yw" targetRuntime="com.ctsi.biyi.generator.plugins.IntrospectedTableBiyiMyBatis3Impl">
+    <property name="databaseDialect" value="oracle"/>
+	<plugin type="com.ctsi.biyi.generator.plugins.WebFilePlugin" > 
+        <property name="importPackage" value="com.ctsi"/>  
+        <property name="targetPackage" value="com.ctsi"/>  
+        <property name="targetProject" value="src/main/java"/>  
+        <property name="targetWebProject" value="."/>  
+    </plugin>
+
+    <plugin type="com.ctsi.biyi.generator.plugins.UnitSelectWebPlugin" > 
+        <property name="targetPackage" value="com.ctsi"/>  
+        <property name="targetProject" value="src/main/java"/>  
+        <property name="targetWebProject" value="."/>  
+    </plugin>
+    
+    <jdbcConnection driverClass="oracle.jdbc.driver.OracleDriver"
+        connectionURL="jdbc:oracle:thin:@//122.224.82.76:1521/orcl"
+        userId="storagemng"
+        password="storagemng">
+    </jdbcConnection>
+
+    
+    <javaTypeResolver >
+      <property name="forceBigDecimals" value="false" />
+    </javaTypeResolver>
+
+    <javaModelGenerator targetPackage="com.ctsi.domain" targetProject="src/main/java">
+      <property name="enableSubPackages" value="true" />
+      <property name="trimStrings" value="true" />
+    </javaModelGenerator>
+
+    <sqlMapGenerator targetPackage="com.ctsi.xml"  targetProject="src/main/java">
+      <property name="enableSubPackages" value="true" />
+    </sqlMapGenerator>
+
+    <javaClientGenerator type="ANNOTATEDMAPPER" targetPackage="com.ctsi.repository"  targetProject="src/main/java">
+      <property name="enableSubPackages" value="true" />
+    </javaClientGenerator>
+
+    
+    <table tableName="null">
+      <property name="ignoreQualifiersAtRuntime" value="true"/>
+    </table> 
+    
+    
+  </context>
+</generatorConfiguration>
