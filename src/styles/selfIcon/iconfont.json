@@ -1,0 +1,58 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1881547",
+      "name": "大数据存储",
+      "font_class": "dashujucunchu",
+      "unicode": "e65e",
+      "unicode_decimal": 58974
+    },
+    {
+      "icon_id": "6299341",
+      "name": "告警",
+      "font_class": "icon-",
+      "unicode": "e679",
+      "unicode_decimal": 59001
+    },
+    {
+      "icon_id": "7093244",
+      "name": "对象存储",
+      "font_class": "duixiangcunchu",
+      "unicode": "e64d",
+      "unicode_decimal": 58957
+    },
+    {
+      "icon_id": "7677938",
+      "name": "设备",
+      "font_class": "shebei",
+      "unicode": "e617",
+      "unicode_decimal": 58903
+    },
+    {
+      "icon_id": "8361866",
+      "name": "主页",
+      "font_class": "zhuye",
+      "unicode": "e6d3",
+      "unicode_decimal": 59091
+    },
+    {
+      "icon_id": "9921742",
+      "name": "icon-GIS_人员监控",
+      "font_class": "icon-GIS_renyuanjiankong",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "10651213",
+      "name": "存储",
+      "font_class": "cunchu",
+      "unicode": "e66d",
+      "unicode_decimal": 58989
+    }
+  ]
+}

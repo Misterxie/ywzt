@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <link rel="stylesheet" href="<%= htmlWebpackPlugin.files.css[0] %>">
+    <link rel="stylesheet" name="theme" href="">
+    <style>
+        /*导航菜单 iview样式修改*/
+        /* .ivu-menu-dark.ivu-menu-vertical .ivu-menu-item, .ivu-menu-dark.ivu-menu-vertical .ivu-menu-submenu-title{
+            background:#2c2d3f;
+        }
+        .ivu-menu-dark.ivu-menu-vertical .ivu-menu-opened .ivu-menu-submenu-title{
+            background:#1e1e26 !important;
+        }
+        .ivu-menu-dark .ivu-menu-opened .ivu-menu .ivu-menu-item{
+            background:#1e1e26 !important;
+        }
+        .ivu-menu-dark .ivu-menu-opened .ivu-menu .ivu-menu-item.ivu-menu-item-active{
+            background:rgba(30,30,38,0.2)!important;
+        }
+        .ivu-card-head{
+            padding:14px 16px 7px !important;
+        } */
+    </style>
+</head>
+
+<body>
+    <div id="app"></div>
+    <div class="lock-screen-back" id="lock_screen_back"></div>
+    <!--高德地图-->
+    <script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.8&key=85778dddf2b6dc097c879023b00fb69a&plugin=AMap.CustomLayer,AMap.Autocomplete,AMap.PlaceSearch,AMap.ControlBar,Map3D"></script>
+
+    <script type="text/javascript" src="<%= htmlWebpackPlugin.files.js[0] %>"></script>
+    <script type="text/javascript" src="<%= htmlWebpackPlugin.files.js[1] %>"></script>
+    <script type="text/javascript" src="<%= htmlWebpackPlugin.files.js[2] %>"></script>
+</body>
+
+</html>
