@@ -40,7 +40,10 @@ module.exports = {
             },
             {
                 test: /\.js$/,
-                loader: 'happypack/loader?id=happybabel',
+                loader:'babel-loader',
+                options:{
+                plugins:['syntax-dynamic-import']
+                },
                 exclude: /node_modules/
             },
             {
@@ -66,16 +69,6 @@ module.exports = {
                 test: /\.(gif|jpg|png|woff|svg|eot|ttf)\??.*$/,
                 loader: 'url-loader?limit=8192&name=image/[name].[ext]'//limit=10000&&name=[name].[ext] 无
             },
-            // {
-            //     test: /\.(png|jpe?g|gif)(\?.*)?$/,
-            //     loader: 'file-loader',//&name=[name].[ext]wu ?limit=10000&name=image/[name].[ext]
-            //     options:{
-            //         limit:8192,
-            //         name:'[name].[ext]',
-            //         publicPath:'/image/',
-            //         outputPath:'/image/',
-            //     }
-            // },
             {
                 test: /\.(html|tpl)$/,
                 loader: 'html-loader'
