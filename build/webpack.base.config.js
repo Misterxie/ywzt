@@ -44,6 +44,7 @@ module.exports = {
                 options:{
                 plugins:['syntax-dynamic-import']
                 },
+                exclude: /node_modules/
             },
             {
                 test: /\.js$/,
